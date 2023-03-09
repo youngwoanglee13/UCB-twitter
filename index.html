@@ -1,12 +1,26 @@
 <html>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
   <body>
     <h1>TWITTER</h1>
     <form id="publicar-form">
-      <label for="TituloPost">Titulo:</label>
-      <input type="texr" id="TituloPost" />
-      <label for="DetallePost">Detalle:</label>
-      <input type="text" id="DetallePost" />
-      <input type="submit" value="Publicar" id="Publicar" />
+      <div>
+        <label for="TituloPost">Titulo:</label>
+        <input type="texr" id="TituloPost" />
+      </div>
+      <div>
+        <label for="DetallePost">Detalle:</label>
+        <input type="text" id="DetallePost" />
+      </div>
+      <div>
+        <input type="submit" value="Publicar" id="Publicar" />
+      </div>
+      
     </form>
     <div id="listaDePosts-div"></div>
 
