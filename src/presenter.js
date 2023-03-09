@@ -12,5 +12,5 @@ form.addEventListener("submit", (event) => {
   const detallePost = detalle.value;
   TwitterApp.postear(tituloPost, detallePost);
   
-  div.innerHTML = "<p>" + tituloPost +"<br>"+ detallePost + "</p>";
+  div.innerHTML =TwitterApp.getListaDePosts();
 });
