@@ -1,15 +1,15 @@
-import sumar from "./sumador";
+import Twitter from "./sumador";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
+const titulo = document.querySelector("#TituloPost");
+const detalle = document.querySelector("#DetallePost");
+const form = document.querySelector("#publicar-form");
+const div = document.querySelector("#listaDePosts-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+  const tituloPost = titulo.value.toUpperCase();
+  const detallePost = detalle.value;
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  div.innerHTML = "<p>" + tituloPost +"<br>"+ detallePost + "</p>";
 });
