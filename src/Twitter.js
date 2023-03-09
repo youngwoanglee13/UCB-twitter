@@ -11,6 +11,10 @@ class Twitter {
         alert("El título no puede superar los 50 caracteres");
         return false;
     }
+    if(detalle.length > 150) {
+        alert("El detalle no puede superar los 150 caracteres");
+        return false;
+    }
     this.posts.push({ titulo, detalle });
     return true;     
   }
