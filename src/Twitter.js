@@ -15,9 +15,9 @@ class Twitter {
     return true;     
   }
   getListaDePosts() {
-    this.lista ="prueba";
+    this.lista = "";
     for (let i = 0; i < this.posts.length; i++) {
-      this.lista= "<p>" + this.posts[i].titulo +"<br>"+ this.posts[i].detalle + "</p>";
+      this.lista= "<p>" + this.posts[i].titulo +"<br>"+ this.posts[i].detalle + "</p>" + this.lista;
     }
     return this.lista;
   }
